@@ -1,3 +1,4 @@
+[![Python application test with Github Actions](https://github.com/acouprie/udacity-azure-project2/actions/workflows/main.yml/badge.svg)](https://github.com/ngocnd10/p2/actions/workflows/main.yml)
 # Overview
 
 This project uses GitHub Actions and Azure Pipeline to build a CI/CD Pipeline to deploy Machine Learning Microservices API using Python Flask.
