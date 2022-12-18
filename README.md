@@ -49,13 +49,14 @@ make all
 
 Deploy 
 ```
-az webapp up -n <your-app-name> -l eastus --resource-group <your-resource-group> --sku FREE
+az webapp up -n <your-app-name> -l eastus --resource-group <your-resource-group> --sku B1
 ```
 
 * Output of a test run
 ![Alt text](Load%20Test.png)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+![Alt text](Deploy%20in%20Azure%20Pipeline.png)
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
