@@ -59,6 +59,7 @@ az webapp up -n <your-app-name> -l eastus --resource-group <your-resource-group>
 ![Alt text](Deploy%20in%20Azure%20Pipeline.png)
 
 * Running Azure App Service from Azure Pipelines automatic deployment
+![Alt text](Deployment%20center.png)
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
@@ -86,6 +87,6 @@ az webapp log tail
 
 ## Demo 
 
-https://d38ximc4ipr3xf.cloudfront.net/udacity/NgocND7-Udacity-P2.mov
+https://youtu.be/DkWN_1n484M 
 
 
