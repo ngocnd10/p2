@@ -86,6 +86,6 @@ az webapp log tail
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+https://d38ximc4ipr3xf.cloudfront.net/udacity/NgocND7-Udacity-P2.mov
 
 
