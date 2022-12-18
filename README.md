@@ -36,7 +36,7 @@ git clone git@github.com:ngocnd10/p2.git
 
 Create the Python Virtual Environment
 ```
-cd ~/.p2
+cd p2
 python3 -m venv ~/.p2
 source ~/.p2/bin/activate
 ```
