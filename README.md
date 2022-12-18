@@ -14,18 +14,46 @@ https://docs.google.com/spreadsheets/d/1Ne7JwKaWu5Rlz_zxjueZKr-4lACrVTAuxI7p3jBM
 * Architectural Diagram (Shows how key parts of the system work)
 ![Architectural Diagram](cd-diagram.png)
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+### Set Up Azure Cloud Shell
+
+- Create ssh-keys in Azure Cloud Shell
+```
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
+```
+- Upload ssh-keys to Github (GitHub > Settings > SSH and GPG keys > New SSH key > Add SSH key)
 
 * Project running on Azure App Service
 ![Alt text](Project%20running%20on%20Azure%20App%20Service.png)
 
 * Project cloned into Azure Cloud Shell
+```
+git clone git@github.com:ngocnd10/p2.git
+```
 ![Alt text](Project%20cloned%20into%20Azure%20Cloud%20Shell.png)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
+
+Create the Python Virtual Environment
+```
+cd ~/.p2
+python3 -m venv ~/.p2
+source ~/.p2/bin/activate
+```
+Install
+```
+make all
+```
+
 ![Alt text](Output%20Make%20File.png)
 
+Deploy 
+```
+az webapp up -n <your-app-name> -l eastus --resource-group <your-resource-group> --sku FREE
+```
+
 * Output of a test run
+![Alt text](Load%20Test.png)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
@@ -39,14 +67,21 @@ udacity@Azure:~$ ./make_predict_azure_app.sh
 Port: 443
 {"prediction":[20.35373177134412]}
 ```
+![Alt text](Test%20ML.png)
 
 * Output of streamed log files from deployed application
+```
+az webapp log tail
+```
 
-> 
+![Alt text](Logs.png)
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+- Deploy with Docker or Kubernetes
+- Create infrastructure as code with Terraform
+- Design and update Web UI
+- Improve ML model
 
 ## Demo 
 
